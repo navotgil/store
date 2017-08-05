@@ -1,0 +1,142 @@
+body{
+    background-color:black;
+    color:white;
+    padding: 0px;
+    margin: 0px;
+    font-family: "consolas";
+    text-align: center;
+}
+
+.loading-spinner{
+    margin-top: 40px;
+}
+
+
+header .menu-btn{
+    display:inline-block;
+    background-color:skyblue;
+    padding:10px 30px;
+    margin:20px;
+    font-size:20px;
+}
+
+header .menu-btn.selected{
+    background-color:lightgreen;
+}
+
+.btn-icon{
+    margin-right:15px;
+}
+
+
+.admin-page{
+    display:none;
+}
+
+.cat-btn {
+    font-size: 24px;
+    font-family: Arial;
+    display: inline-block;
+    margin: 10px;
+}
+
+.cat-btn .delete-cat{
+    color:red;
+    margin-left: 5px;
+    font-size: 15px;
+    visibility:hidden;
+}
+
+.cat-btn:hover .delete-cat{
+    visibility:visible;
+}
+
+.product-btn {
+    position:relative;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    color: black;
+    margin: 10px;
+}
+
+.product-btn#new-product{
+    background-image:url('http://www.samsung.com/global/galaxy/common/images/icon_plus_big.png');
+    background-color:transparent;
+}
+
+.product-btn .p-title{
+    background-color:yellow;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.product-btn .p-title .edit-product{
+    visibility:hidden;
+    margin-right:5px;
+}
+
+.product-btn:hover .p-title .edit-product{
+    visibility:visible;
+}
+
+form{
+    margin-top: 40px;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+
+input[type="submit"]{
+    font-family: "consolas";
+    background-color: lightgreen;
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    font-size: 18px;
+}
+
+#delete-product{
+    font-family: "consolas";
+    background-color: red;
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    display:none;
+}
+
+input[type="text"]{
+    font-size: 25px;
+    vertical-align: middle;
+    border: solid 1px #999;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+
+textarea{
+    vertical-align: top;
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 100px;
+}
+
+
+.no-categories #add-product, .category-alert{
+    display:none;
+}
+
+.no-categories .category-alert{
+    display:block;
+}

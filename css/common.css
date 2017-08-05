@@ -1,0 +1,26 @@
+.clickable{
+	cursor:pointer;
+}
+
+.shadowed{
+ -webkit-box-shadow: 3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+		 box-shadow:         3px 3px 23px 0px rgba(50, 50, 50, 0.75);	
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+}
+
+#content{
+    background: rgba(255,255,255,0.7);
+    font-size: 20px;
+    font-family: Arial;
+    padding:10px;
+}
+
+

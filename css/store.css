@@ -1,0 +1,78 @@
+body{
+    text-align: center;
+}
+
+#page{
+    opacity:0;
+    transition: opacity 2s ease-in-out;
+}
+
+#page.ready{
+    opacity:1;
+}
+
+#categories{
+    border: 3px red solid;
+    padding: 20px;
+    border-right: none;
+    border-left: none;
+    background-color: rgba(255,0,0,0.2);
+    margin-top: -20px;
+    font-family: 'Chelsea Market', cursive;
+}
+
+#categories .nav-btn{
+    display: inline-block;
+    margin:0px 10px;
+}
+
+.product{
+    display: inline-block;
+    border: 1px solid rgba(255,0,0,0.4);
+    text-align: left;
+    padding: 5px;
+    font-family: 'Chelsea Market', cursive;
+    width: 200px;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.product .title{
+     white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product .img{
+    height: 200px;
+    width:200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.product .desc{
+    font-size: 12px;
+    color: #666;
+    font-family: Arial;
+    height:50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.product .price{
+    font-size: 14px;
+    padding: 10px;
+    color: green;
+}
+
+.product .fav{
+    opacity:0;
+    color:yellow;
+}
+
+
+.product.favorite .fav{
+    opacity:1;
+}
+
